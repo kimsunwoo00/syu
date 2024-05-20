@@ -1,0 +1,96 @@
+/* 전체 앱 컨테이너 스타일 */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* 폰트 설정 */
+}
+
+/* 왼쪽과 오른쪽 패널을 각각 50% 너비로 설정 */
+.split {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 센터 정렬 */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 왼쪽 패널 스타일링 */
+.left {
+  background-color: #f8f8f8;
+}
+
+/* 오른쪽 패널 스타일링 */
+.right {
+  background-color: #fff;
+}
+
+/* 중앙에 내용을 정렬하는 스타일 */
+.centered {
+  width: 90%; /* 중앙 컨텐츠 너비 */
+  max-width: 800px;
+  margin: 20px auto; /* 중앙 정렬 및 여백 */
+}
+
+/* 입력 및 출력 영역에 대한 텍스트 및 버튼 스타일링 */
+textarea, .code-output, input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px; /* 패딩 설정 */
+  border: 1px solid #ccc; /* 테두리 설정 */
+  border-radius: 5px; /* 둥근 모서리 */
+  font-family: monospace; /* 폰트 스타일 */
+  font-size: 14px; /* 폰트 크기 */
+}
+
+/* 텍스트 영역 높이 설정 */
+textarea {
+  height: 200px; /* 텍스트 영역 높이 설정 */
+}
+
+/* 코드 출력 영역 스타일 */
+.code-output {
+  height: 200px; /* 코드 출력 영역 높이 설정 */
+  background: #f4f4f4; /* 배경색 */
+  white-space: pre-wrap; /* 공백 포함 표시 */
+  overflow-y: auto; /* 스크롤바 설정 */
+}
+
+/* 하이라이트 스타일 */
+.highlight {
+  background-color: yellow; /* 하이라이트 색상 */
+  color: black; /* 텍스트 색상 */
+}
+
+.feedback {
+  padding: 10px;
+  background-color: #f4f4f4; /* 피드백 영역 배경색 */
+  border: 1px solid #ccc; /* 피드백 영역 테두리 */
+  border-radius: 5px; /* 둥근 모서리 */
+  white-space: pre-wrap; /* 공백 포함하여 표시 */
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 10px 20px;
+  cursor: pointer; /* 마우스 오버시 포인터 변경 */
+  background-color: #4CAF50; /* 버튼 배경색 */
+  color: white; /* 버튼 텍스트 색상 */
+  border: none; /* 테두리 없음 */
+  border-radius: 5px; /* 둥근 모서리 */
+  font-size: 16px; /* 폰트 크기 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+/* 버튼 호버 스타일 */
+button:hover {
+  background-color: #45a049; /* 호버 시 배경색 */
+}
+
+/* 헤더 스타일 */
+h2 {
+  margin-bottom: 10px;
+  color: #333; /* 헤더 색상 */
+}
